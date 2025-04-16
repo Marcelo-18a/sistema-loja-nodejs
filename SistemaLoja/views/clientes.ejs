@@ -2,39 +2,38 @@
 <%- include ('partials/header.ejs')%>
 
 <div class="container">
+    <br><br><br><br>
     <div class="card">
         <div class="card-header">
-            <h1>Loja</h1>
+            <h1>Clientes</h1>
         </div>
         <div class="card-body">
             <table class="table table-bordered table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th>imagem</th>
-                        <th>Nome:</th>
-                        <th>Preço</th>
-                        <th>categoria:</th>
+                        <th>Nome</th>
+                        <th>cpf</th>
+                        <th>endereco</th>
                     </tr>
                 </thead>
                 <tbody>
                      <!--Chamando array de objetos-->
-                     <% loja.forEach(loja => {%>
+                     <% clientes.forEach(clientes => {%>
                         <tr>
-                            <td><img src="/images/produto.png" alt=""></td>
-                            <td><%=loja.nome %></td>
-                            <td><%=loja.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
-                            <td><%=loja.categoria %></td>
+                            <td><%=clientes.nome %></td>
+                            <td><%=clientes.cpf %></td>
+                            <td><%=clientes.endereco %></td>
                             <% }) %>
                         </tr>
                     
 
-                </tbody>
-            </table>
+                     </tbody>
+                    </table>
+                 </div>
+            </div>
         </div>
     </div>
 </div>
-
-
 
        
 
