@@ -20,7 +20,7 @@
                     <tbody>
                          <% produto.forEach(produto => {%>
                             <tr>
-                                <td><img src="/images/vandalFor.png" alt=""  style="width: 200px; height: auto;"></td>
+                                <td><img src="/images/<%=produto.image%>" alt="<%= produto.nome%>"  style="width: 200px; height: auto;"></td>
                                 <td><%=produto.nome %></td>
                                 <td><%=produto.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
                                 <td><%=produto.categoria %></td>

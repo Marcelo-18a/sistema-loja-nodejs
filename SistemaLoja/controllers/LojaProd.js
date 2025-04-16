@@ -5,11 +5,11 @@ const router = express.Router();
 router.get("/produto", (req,res) =>{
 
     const produto = [
-        {nome: "Vandal preludio", preco: 2175, categoria: "Edição Exclusiva"},
-        {nome: "Vandal reaver", preco: 1775, categoria: "Edição Exclusiva"},
-        {nome: "Vandal forsaken", preco: 1775, categoria: "Edição Exclusiva"},
-        {nome: "Vandal Champions 2021", preco: 2675, categoria: "Edição Exclusiva"},
-        {nome: "Vandal Elderflame", preco: 2475, categoria: "Edição Ultra"}
+        {image:"vandalPre.png",nome: "Vandal preludio", preco: 2175, categoria: "Edição Exclusiva"},
+        {image:"vandalReav.png",nome: "Vandal reaver", preco: 1775, categoria: "Edição Exclusiva"},
+        {image:"vandalFor.png",nome: "Vandal forsaken", preco: 1775, categoria: "Edição Exclusiva"},
+        {image:"vandal2021.png",nome: "Vandal Champions 2021", preco: 2675, categoria: "Edição Exclusiva"},
+        {image:"vandalElder.png",nome: "Vandal Elderflame", preco: 2475, categoria: "Edição Ultra"}
     ]
     res.render("produto",{
         produto:produto,
